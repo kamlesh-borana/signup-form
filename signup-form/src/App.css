@@ -1,0 +1,215 @@
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 25%;
+}
+.header {
+  display: flex;
+  justify-content: center;
+}
+.logo {
+  width: 40px;
+}
+.brand {
+  font-size: 26px;
+  font-weight: bold;
+  align-self: center;
+  padding-top: 5px;
+}
+.nav-container {
+  padding: 0 18%;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0 70px;
+  align-items: center;
+}
+.navigation .circle {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #99a0b2;
+}
+.navigation .circle.path {
+  background-color: #664de5;
+  color: #fff;
+}
+.divider {
+  flex-grow: 1;
+  border-bottom: 2px solid #99a0b2;
+}
+.page1-heading {
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 0;
+  text-align: center;
+}
+.page1-sub-heading {
+  font-weight: 400;
+  font-size: 20px;
+  color: #99a0b2;
+  margin-top: 20px;
+  text-align: center;
+}
+.page1-input {
+  margin-top: 60px;
+  padding: 0 15%;
+}
+.page1-label {
+  font-weight: 600;
+}
+.page1-label .optional {
+  color: #99a0b2;
+}
+.page1-input input {
+  padding: 12px;
+}
+.input-group .input-group-text {
+  color: #99a0b2;
+}
+.page1-container a {
+  width: 100%;
+  background-color: #664de5;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: none;
+}
+.page1-container a.disabled-button {
+  pointer-events: none;
+  opacity: 0.65;
+}
+.selection-card {
+  display: flex;
+  justify-content: space-between;
+}
+.option-card {
+  width: 45%;
+}
+.selection-card .option-card label {
+  width: 100%;
+}
+.options-card-inner {
+  text-align: left;
+  padding: 25px 19px;
+}
+.options-card-logo {
+  margin-bottom: 31px;
+}
+.options-card-inner h4 {
+  margin-bottom: 16px;
+}
+.options-card-inner p {
+  margin: 0;
+  color: #99a0b2;
+}
+.option-card .btn-outline {
+  border: 2px solid #99a0b2;
+  border-radius: 3%;
+}
+.option-card .btn-outline:hover {
+  border: 2px solid black;
+}
+.option-card .btn-check:checked + label {
+  border: 2px solid #664de5;
+}
+.page4-input {
+  margin-top: 20px;
+  padding: 0 15%;
+}
+.complete {
+  text-align: center;
+  margin: 0 0 30px;
+}
+.complete img {
+  width: 80px;
+}
+.divider.path {
+  border-bottom: 2px solid #664de5;
+}
+@media only screen and (max-width: 600px) {
+  main {
+    height: auto;
+    margin-top: 30px;
+    padding: 0;
+  }
+  .nav-container {
+    padding: 0 10%;
+  }
+  .navigation {
+    margin: 50px 0;
+  }
+  .page1-heading {
+    font-size: 24px;
+  }
+  .page1-sub-heading {
+    font-size: 16px;
+  }
+  .page1-container {
+    padding: 0 5%;
+  }
+  .page1-input {
+    margin-top: 30px;
+    padding: 0;
+  }
+  .selection-card .option-card label {
+    padding: 12px;
+  }
+  .options-card-inner {
+    padding: 0;
+    text-align: center;
+  }
+  .options-card-logo {
+    margin-bottom: 10px;
+  }
+  .options-card-logo img {
+    width: 24px;
+  }
+  .options-card-inner h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .options-card-inner p {
+    font-size: 14px;
+  }
+  .page4-input {
+    padding: 0;
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 1000px) and (min-width: 600px) {
+  main {
+    padding: 10%;
+  }
+  .navigation {
+    margin: 50px 0;
+  }
+  .page1-heading {
+    font-size: 32px;
+  }
+  .page1-sub-heading {
+    margin-top: 12px;
+    font-size: 18px;
+  }
+  .page1-input {
+    margin-top: 40px;
+  }
+  .options-card-inner {
+    padding: 12px 6px;
+  }
+  .options-card-logo {
+    margin-bottom: 22px;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 1000px) {
+  main {
+    padding: 15%;
+  }
+}
